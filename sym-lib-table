@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name S_Kagis_MultiVib-cache)(type Legacy)(uri ${KIPRJMOD}/S_Kagis_MultiVib-cache.lib)(options "")(descr ""))
+)
