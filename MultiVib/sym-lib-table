@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name S_Kagis_MultiVib-rescue)(type Legacy)(uri ${KIPRJMOD}/S_Kagis_MultiVib-rescue.lib)(options "")(descr ""))
+  (lib (name New_Library)(type Legacy)(uri ${KIPRJMOD}/Symbol_Library/New_Library.lib)(options "")(descr ""))
+)
