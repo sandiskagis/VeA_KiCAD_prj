@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name Battery_footprints)(type KiCad)(uri ${KIPRJMOD}/Battery_footprints.pretty)(options "")(descr ""))
-  (lib (name SMTU2032)(type KiCad)(uri ${KIPRJMOD}/Battery_footprints.pretty/SMTU2032.pretty)(options "")(descr ""))
-)
