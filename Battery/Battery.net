@@ -1,0 +1,62 @@
+(export (version D)
+  (design
+    (source C:\Users\kagis\OneDrive\Dators\Skola\KiCAD_kurss\Battery\Battery\Battery.sch)
+    (date "2021-10-28 4:47:45 PM")
+    (tool "Eeschema (5.1.10)-1")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source Battery.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref BT1)
+      (value 3V)
+      (footprint Battery_footprints:BAT-HLD-005-THM)
+      (datasheet ~)
+      (libsource (lib Device) (part Battery_Cell) (description "Single-cell battery"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 617AA170))
+    (comp (ref R1)
+      (value 10k)
+      (footprint Resistor_SMD:R_0805_2012Metric)
+      (datasheet ~)
+      (libsource (lib Device) (part R) (description Resistor))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 617AB705)))
+  (libparts
+    (libpart (lib Device) (part Battery_Cell)
+      (description "Single-cell battery")
+      (docs ~)
+      (fields
+        (field (name Reference) BT)
+        (field (name Value) Battery_Cell))
+      (pins
+        (pin (num 1) (name +) (type passive))
+        (pin (num 2) (name -) (type passive))))
+    (libpart (lib Device) (part R)
+      (description Resistor)
+      (docs ~)
+      (footprints
+        (fp R_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive)))))
+  (libraries
+    (library (logical Device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib")))
+  (nets
+    (net (code 1) (name +3V0)
+      (node (ref R1) (pin 2))
+      (node (ref BT1) (pin 1)))
+    (net (code 2) (name GND)
+      (node (ref R1) (pin 1))
+      (node (ref BT1) (pin 2)))))
